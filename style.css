@@ -49,15 +49,7 @@ img {
   padding: 0 2rem;
 }
 
-/* Cards */
-.card {
-  padding: 3rem;
-  margin: 0.7rem 0;
-  margin-right: 7rem;
-  position: relative;
-}
-
-.card::after {
+/* .card::after {
   content: '';
   position: absolute;
   top: 80%;
@@ -66,8 +58,8 @@ img {
   width: 10%;
   border-radius: 120%;
   background: #eb011b;
-  /* background-size: 100%; */
-}
+  background-size: 100%;
+} */
 
 /* List */
 .list {
@@ -291,6 +283,105 @@ input {
   margin: 1.2rem 0;
 }
 
+/* Cards */
+.card {
+  padding: 1.5rem;
+  margin: 0.7rem 0;
+  margin-right: 7rem;
+  position: relative;
+}
+
+.chip {
+  position: relative;
+  top: 10px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 40px;
+
+  background-image: linear-gradient(
+    to bottom left,
+    #ffc09d,
+    #ffc09d
+  );
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.chip-line {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #c75326;
+}
+
+.chip-line:nth-child(1) {
+  top: 10px;
+}
+
+.chip-line:nth-child(2) {
+  top: 18px;
+}
+.chip-line:nth-child(3) {
+  top: 25px;
+}
+
+.chip-line:nth-child(4) {
+  left: 25px;
+  width: 1px;
+  height: 50px;
+}
+
+.chip-main {
+  width: 20px;
+  height: 35px;
+  border: 3px solid #c75326;
+  border-radius: 3px;
+  background-image: linear-gradient(
+    to bottom left,
+    #ffc09d,
+    #ffc09d
+  );
+  z-index: 1;
+  margin-left: 13px;
+  margin-top: 1px;
+  position: absolute;
+}
+.chip-outer {
+  width: 50px;
+  height: 40px;
+  border: 3px solid #333;
+  position: fixed;
+  z-index: 1;
+}
+
+.master {
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+  display: flex;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.master-red {
+  background-color: #eb001b;
+}
+
+.master-yellow {
+  margin-left: -10px;
+  background-color: rgba(255, 209, 0, 0.7);
+}
+
+.expiration {
+  margin-top: 1.5rem;
+}
 .show-case {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
