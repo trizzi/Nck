@@ -297,6 +297,15 @@ input {
   grid-gap: 2rem;
 }
 
+.show-case .right,
+.show-case .left {
+  padding: 2rem 0;
+}
+
+.show-case .right {
+  font-weight: bolder;
+}
+
 .show-case image {
   padding-top: 2rem;
 }
